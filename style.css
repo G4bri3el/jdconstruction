@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('images/background.webp');
+    background-size: cover;
+    background-position: center;
+    height: 85vh; /* Ocupa toda la altura de la pantalla */
+    width: 100%; /* Ocupa todo el ancho */
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    padding: 20px;
+}
+
+.header-title h1 {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+#about {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.about h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px; /* Espacio añadido */
+}
+
+.info-blocks {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.info-block {
+    text-align: center;
+
+}
+
+.info-block img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 250px; /* Establece un ancho máximo, puedes ajustar este valor */
+    max-height: 250px; /* Establece una altura máxima */
+    object-fit: cover; /* Recorta la imagen para llenar el contenedor */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+#gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-container {
+    position: relative;
+    display: inline-block;
+}
+
+.gallery-image {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

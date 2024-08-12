@@ -1,16 +1,57 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> JD Construction </title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <h1> Hello World </h1>
-    <h2> Welcome to JD Construction </h2>
-</body>
+    <header>
+        <div class="header-title">
+            <h1>JD Construction</h1>
+        </div>
+        <div class="header-content">
+            <h1>Welcome to JD Construction</h1>
+        </div>
+    </header>
 
+    <section id="about">
+        <h2>About Us</h2> <!-- Título centrado y en negrita -->
+        <div class="info-blocks">
+            <div class="info-block">
+                <img src="images/materiales.jpg" alt="Direccion 1">
+                <h2>Address</h2>
+                <p>5979 Eucalyptus dr.Highland, Ca 92346</p>
+            </div>
+            <div class="info-block">
+                <img src="images/mail.png" alt="Direccion 2">
+                <h2>Email</h2>
+                <p>You can contact us by email:</p>
+                <p><a href="mailto:jeronimosimental692@gmail.com">jeronimosimental692@gmail.com </a></p>     
+            </div>
+            <div class="info-block">
+                <img src="images/phone.webp" alt="Direccion 3">
+                <h2>Phone Number</h2>
+                <p>(909) 936-9834</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Photo Gallery</h2>
+        <div class="gallery-container">
+            <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+            <img src="images/gimage1.webp" alt="Image 1" class="gallery-image">
+            <span class="next" onclick="changeImage(1)">&#10095;</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 JD Construction. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
 </html>
